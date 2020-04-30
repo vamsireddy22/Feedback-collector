@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body 
+		{
+  			background: #ffffff url("bg.jpg");
+  			background-size: cover;
+  			background-position: center;
+  		}
+		h1.a
+		{
+			font-size: 60px;
+			color: Crimson;
+			text-align: center;
+		}
+		h1.b
+		{
+			font-size: 45px;
+			color: SlateBlue;
+			text-align: center;
+		}
+		h1.c
+		{
+			font-size: 40px;
+			color:Sienna ;
+			text-align: center;
+		}
+
+        #f1
+        {
+            border-width: 1px;
+            font-size: 25px;
+            padding: 50px 1px 20px 10px;
+        }
+        .f1_label 
+        {
+            white-space: nowrap;
+        }
+        td.a
+        {
+            text-align: center;
+        }
+
+
+	</style>
+	<title>UPDATE STUDENT</title>
+</head>
+<body>
+	<h1 class='a'>GPREC</h1>
+	<h1 class='b'>TRAINING & PLACEMENT CLUB</h1>
+	<h1 class='c'>UPDATE STUDENT DETAILS</h1>
+	<center> 
+            <form name="f1" method="post" action="updateconnect.php" id="f1">
+                <table>
+                    <tr>
+                        <td class="f1_label">ROLL NUMBER :</td>
+                        <td><input type="text" name="roll" value=""  />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="f1_label">COMPANY NAME :</td> 
+                        <td><input type="text" name="company" value="" />
+                        </td>
+                    </tr>
+                     <tr>
+                        <td class='a'>
+                            <input type="submit" name="update" value="UPDATE" style="font-size:18px; " />
+                        </td>
+                    </tr>
+                </table>
+            </form> 
+             <p>
+            <form action="redirect.php" method="POST">
+            <CENTER><input type="submit" name="send" value="GO BACK" style="font-size:18px; " /></CENTER>
+        </form></p>
+        </center>
+</body>
+</html>

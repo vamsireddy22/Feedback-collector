@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body 
+		{
+  			background: #ffffff url("bg.jpg") no-repeat center;
+  			background-size: cover;
+  			background-position: center;
+  		}
+		h1.a
+		{
+			font-size: 60px;
+			color: Crimson;
+			text-align: center;
+		}
+		h1.b
+		{
+			font-size: 45px;
+			color: SlateBlue;
+			text-align: center;
+		}
+		h1.c
+		{
+			font-size: 40px;
+			color:Sienna ;
+			text-align: center;
+		}
+
+        #f1
+        {
+           	font-size: 25px;
+            border-width: 1px;
+            padding: 50px 1px 20px 10px;
+        }
+        .f1_label 
+        {
+            white-space: nowrap;
+        }
+
+
+	</style>
+	<title>ADD STUDENT</title>
+</head>
+<body background="bg.jpeg">
+	<h1 class='a'>GPREC</h1>
+	<h1 class='b'>TRAINING & PLACEMENT CLUB</h1>
+	<h1 class='c'>ADD STUDENT</h1>
+	<center> <div>  
+            <form name="f1" method="post" action="addconnect.php" id="f1">
+                <table>
+                    <tr>
+                        <td class="f1_label">NAME :</td> 
+                        <td><input type="text" name="name" value="" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="f1_label">ROLL NUMBER :</td>
+                        <td><input type="text" name="roll" value=""  required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="f1_label">BRANCH :</td>
+                        <td>
+                            <select name='branch' required>
+                                <option name='branch'>CSE</option>
+                                <option name='branch'>ECE</option>
+                                <option name='branch'>MECH</option>
+                                <option name='branch'>EEE</option>
+                                <option name='branch'>CIVIL</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="f1_label">MAIL ID :</td>
+                        <td><input type="text" name="mail" value=""  required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="f1_label">PHONE NUMBER :</td>
+                        <td><input type="text" name="mobile" value=""  />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="f1_label">CGPA :</td>
+                        <td><input type="text" name="cgpa" value=""  required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <CENTER><input type="submit" name="ADD" value="ADD STUDENT" style="font-size:18px; " /></CENTER>
+                        </td>
+                    </tr>
+                </table>
+            </form> 
+            <p>
+            <form action="redirect.php" method="POST">
+            <CENTER><input type="submit" name="send" value="GO BACK" style="font-size:18px; " /></CENTER>
+        </form></p>
+        </div></center>
+</body>
+</html>
