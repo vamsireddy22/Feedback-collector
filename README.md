@@ -8,5 +8,4 @@ As aimed, our project creates an effective, wide range and one stop platform for
 
 Languages : HTML, CSS, Java script, PHP
 server : Xampp
-
-You can go through the project report for information. If you face any issues feel free contact. 
+ 
